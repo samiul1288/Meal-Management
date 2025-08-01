@@ -65,4 +65,12 @@ public class MealCount {
         }
         return total;
     }
+    public static void addMealForUser(Scanner sc) {
+        System.out.print("Enter user ID to add meal for: ");
+        int userId = sc.nextInt();
+        sc.nextLine(); // clear buffer
+
+        addMeal(sc, userId);
+    }
+
 }
